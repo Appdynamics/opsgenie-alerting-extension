@@ -24,11 +24,14 @@ This extension is configured as a custom action on the AppDynamics controller (s
     
 2. cd into \<Controller-install-dir\>/custom/opsgenie/lib and edit the config.properties configuration file:
 
+
 	###Parameters
 	#Customer key for the OpsGenie authentication
     customer-key=e83a2035-x992-44e3-8974-4727c738fc30
     # Comma separated list of emails to receive the alerts
     recipient-list=dbershadsky@appdynamics.com
+    # Comma separated list of teams to receive the alerts
+    teams-list=DevOpsTeam
 	~~~~
 	
 3.  Now you are ready to use this extension as a custom action. In the AppDynamics UI, go to 'Alert & Respond' -> 
