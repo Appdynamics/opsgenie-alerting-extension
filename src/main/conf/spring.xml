@@ -22,6 +22,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
     <bean id="alertSender" class="com.appdynamics.extension.opsgenie.OpsGenie">
         <property name="customerKey" value="${customer-key}" />
         <property name="recipientList" value="${recipient-list}" />
+        <property name="teamsList" value="${teams-list}" />
     </bean>
 
 </beans>

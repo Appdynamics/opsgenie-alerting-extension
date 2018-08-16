@@ -9,3 +9,6 @@ build/
 dist/
 src/main/main.iml
 tmp/
+
+# OS files #
+.DS_Store

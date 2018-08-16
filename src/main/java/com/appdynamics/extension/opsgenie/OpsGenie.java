@@ -41,6 +41,14 @@ public class OpsGenie implements AlertSender {
     }
 
     private String recipientList;
+    
+    public String getTeamsList() { return teamsList; }
+    
+    public void setTeamsList(String teamsList) {
+        this.teamsList = teamsList;
+    }
+    
+    private String teamsList;
 
 
     public void sendAlert(AD_AlertData alertData) throws Exception {
@@ -73,6 +81,7 @@ public class OpsGenie implements AlertSender {
         request.setActions(Arrays.asList("open", alertData.getLink()));
 //        request.setTags(Arrays.asList("network", "operations"));
         request.setRecipients(Arrays.asList(recipientList.split(",")));
+        request.setTeams(Arrays.asList(teamsList.split(",")));
         IAlertOpsGenieClient alerter = client.alert();
 
         CreateAlertResponse response = alerter.createAlert(request);

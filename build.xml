@@ -80,7 +80,7 @@
 
                 <!-- Finally, use the generated libs path -->
                 <attribute name="Class-Path"
-                           value="./dom4j/dom4j-2.0.0-ALPHA-2.jar ./log4j/commons-logging-1.1.1.jar ./log4j/log4j-1.2.17.jar ./opsgenie/opsgenie-javasdk-all-2014.01.24.jar
+                           value="./dom4j/dom4j-2.0.0-ALPHA-2.jar ./log4j/commons-logging-1.1.1.jar ./log4j/log4j-1.2.17.jar ./opsgenie/opsgenie-sdk-shaded-2.4.2.jar
                             ./spring/spring-beans.jar ./spring/spring-core.jar ./spring/spring-context.jar ./"/>
             </manifest>
         </jar>
