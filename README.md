@@ -26,7 +26,7 @@ This extension is configured as a custom action on the AppDynamics controller (s
 
 	###Parameters
 	#Customer key for the OpsGenie authentication
-    customer-key=e83a2035-x992-44e3-8974-4727c738fc30
+    customer-key=<customer-key>
     # Comma separated list of emails to receive the alerts
     recipient-list=dbershadsky@appdynamics.com
 	~~~~
